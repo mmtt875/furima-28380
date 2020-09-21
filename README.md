@@ -45,17 +45,17 @@ Things you may want to cover:
 
 ## items テーブル
 
-| Column        | Type       | Options                        |
-| ------------- | -------    | ----------------------------   |
-| item_name     | string     | null: false                    |
-| description   | text       | null: false                    |
-| category      | integer    | null: false                    |
-| status        | integer    | null: false                    |
-| delivery_fee  | integer    | null: false                    |
-| area          | integer    | null: false                    |
-| delivery_days | integer    | null: false                    |
-| price         | integer    | null: false                    |
-| user          | references | null: false, foreign_key: true |
+| Column           | Type       | Options                        |
+| ---------------- | -------    | ----------------------------   |
+| name             | string     | null: false                    |
+| description      | text       | null: false                    |
+| category_id      | integer    | null: false                    |
+| status_id        | integer    | null: false                    |
+| delivery_fee_id  | integer    | null: false                    |
+| area_id          | integer    | null: false                    |
+| delivery_days_id | integer    | null: false                    |
+| price            | integer    | null: false                    |
+| user             | references | null: false, foreign_key: true |
 
 imageカラムはActive storageで管理
 
@@ -83,7 +83,7 @@ imageカラムはActive storageで管理
 | Column        | Type       | Options                        |
 | ------------- | ---------- | ------------------------------ |
 | postal_code   | string     | null: false                    |
-| prefecture    | integer    | null: false                    |
+| prefecture_id | integer    | null: false                    |
 | city          | string     | null: false                    |
 | address       | string     | null: false                    |
 | building_name | string     |                                |
