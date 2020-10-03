@@ -8,7 +8,6 @@ window.addEventListener('load',function(){
       priceFeeId.innerHTML = priceFee;
     const salesProfitId = document.getElementById("profit")
       salesProfitId.innerHTML = salesProfit;
-      console.log(price,priceFee);
   })
   
 })
