@@ -18,6 +18,10 @@ class ItemsController < ApplicationController
     end
   end
 
+  def show
+    @item = Item.find(params[:id])
+  end
+  
   def edit
     @item = Item.find(params[:id])
   end
@@ -26,7 +30,7 @@ class ItemsController < ApplicationController
     item = Item.find(params[:id])
     item.update(item_params)
   end
-  
+
   def item_params
     params.require(:item).permit(
     :name, :image, :description, :category_id, :status_id, :delivery_fee_id,
