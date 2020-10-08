@@ -32,7 +32,7 @@ RSpec.describe Order, type: :model do
         expect(@order.errors.full_messages).to include("Postal code is invalid")
       end
       it "都道府県が未選択だと購入できない" do
-        @order.area_id = "1"
+        @order.area_id = 1
         @order.valid?
         expect(@order.errors.full_messages).to include("Area must be other than 1")
       end
