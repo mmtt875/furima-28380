@@ -204,3 +204,9 @@
   font-weight: bold;
   font-size: 23px;
 }
+
+.soldout {
+  color: #ea352d;
+  font-weight: bold;
+  font-size: 45px;
+}
